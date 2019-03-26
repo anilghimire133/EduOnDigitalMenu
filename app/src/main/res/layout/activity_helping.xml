@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HelpingActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/itemsimage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector"
+                        android:src="@mipmap/step1" />
+
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/itemsimage1"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="1. Choose your dish"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Select your favourite food from menu."/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/itemsimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector"
+                        android:src="@mipmap/step2" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/itemsimage"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="2. Add to Cart"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text2"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Find your suitable food items from sub category and add to your cart"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/itemsimage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector2"
+                        android:src="@mipmap/step3" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/itemsimage3"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="3. Change the quantity"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text3"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Goto my cart and change quantity. Also you can view your amount."/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/itemsimage4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector"
+                        android:src="@mipmap/step4" />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/itemsimage4"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="4. Checkout"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text4"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="After adding food item, click on Checkout button to place your order."/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/itemsimage5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector"
+                        android:src="@mipmap/step5" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/itemsimage5"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="5. Check Order"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text5"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Goto MyOrder to check full details of your order and also view your total amount."/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sublinearlayout6"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/itemsimage6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circleitemselector"
+                        android:src="@mipmap/step4" />
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/itemsimage6"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="6. Call the Bill"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text6"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="Once you select this button, you will receive your printed receipt on your table."/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

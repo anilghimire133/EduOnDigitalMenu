@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ayush.digitalmenu.MainMenu.MainMenuActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/itemsimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/burgerdetailimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Nameofitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintRight_toLeftOf="@+id/imageView5"
+        android:maxLines="2"
+        android:ems="8"
+        android:gravity="left"
+        android:text="Baked Rice with Vegan Cheese"
+        android:textColor="#000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsimage" />
+
+        <TextView
+            android:id="@+id/no_of_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:text="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemsimage" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:paddingTop="2dp"
+        android:src="@drawable/heart_off"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/no_of_likes"
+        app:layout_constraintTop_toBottomOf="@+id/itemsimage" />
+
+        <TextView
+            android:id="@+id/NRS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Nameofitem"
+            android:layout_alignStart="@+id/Nameofitem"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:paddingRight="2dp"
+            android:text="NRS "
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nameofitem" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/NRS"
+            android:layout_toRightOf="@+id/NRS"
+            android:paddingLeft="2dp"
+            android:text="250"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/NRS"
+            app:layout_constraintTop_toBottomOf="@+id/Nameofitem" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="108dp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="A hamburger, beefburger or burger is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun."
+            android:textAlignment="viewStart"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/NRS"
+            app:layout_constraintTop_toBottomOf="@+id/itemsimage" />
+
+        <Button
+            android:id="@+id/minusicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_minus"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/quantity"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/minusicon"
+        android:layout_toRightOf="@+id/minusicon"
+        android:background="@drawable/circleitemselector"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="5"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/plusicon"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/plusicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/quantity"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/quantity"
+            android:layout_toRightOf="@+id/quantity"
+            android:background="@drawable/ic_plus"
+            android:paddingTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/addtocartbtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/plusicon"
+            android:layout_toRightOf="@+id/plusicon"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="Add to cart"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            app:layout_constraintStart_toEndOf="@+id/minusicon"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/addtocart"
+            android:tint="@color/white"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/scrollView2"
+            app:layout_anchorGravity="bottom|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalcartitems"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignLeft="@+id/fab"
+        android:layout_alignStart="@+id/fab"
+        android:layout_alignTop="@+id/fab"
+        android:layout_marginBottom="44dp"
+        android:background="@mipmap/cart_counter"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:stateListAnimator="@anim/shake"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:visibility="visible"
+        app:layout_anchor="@+id/fab"
+        app:layout_anchorGravity="right|top"
+        app:layout_constraintBottom_toBottomOf="@+id/fab"
+        app:layout_constraintStart_toEndOf="@+id/fab"
+        tools:ignore="InvalidId" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>

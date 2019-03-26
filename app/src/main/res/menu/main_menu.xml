@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Menu1"
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/CallWaiter"
+        android:title="Call Waiter" />
+    <item
+        android:id="@+id/SelectLanguage"
+        android:title="Select Language" />
+    <item
+        android:id="@+id/MyOrder"
+        android:title="My Order" />
+
+</menu>

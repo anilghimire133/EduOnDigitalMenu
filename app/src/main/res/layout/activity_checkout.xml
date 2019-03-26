@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.ayush.digitalmenu.Checkout.CheckoutActivity">
+
+        <TextView
+            android:id="@+id/Imagehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Image"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Namehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/Imagehead"
+            android:layout_toRightOf="@+id/Imagehead"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Imagehead"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Pricehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/Quantityhead"
+            android:layout_toStartOf="@+id/Quantityhead"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintEnd_toStartOf="@+id/Quantityhead"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/Quantityhead"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/Totalhead"
+            android:layout_toStartOf="@+id/Totalhead"
+            android:gravity="center"
+            android:text="Quantity"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintEnd_toStartOf="@+id/Totalhead"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Totalhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Imagehead"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Namehead" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:clipChildren="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="200"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+        <TextView
+            android:id="@+id/price_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/subtotal"
+            android:padding="10dp"
+            android:text="Price Subtotal"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/subtotal"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+        <TextView
+            android:id="@+id/vat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/subtotal"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="20"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/price_subtotal"
+            android:layout_alignStart="@+id/price_subtotal"
+            android:layout_below="@+id/vat_amount"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/grand_total"
+            app:layout_constraintStart_toStartOf="@+id/grand_total"
+            app:layout_constraintTop_toBottomOf="@+id/vat_total" />
+
+        <TextView
+            android:id="@+id/vat_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/price_subtotal"
+            android:layout_alignStart="@+id/price_subtotal"
+            android:layout_below="@+id/price_subtotal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="Total VAT(10%)"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/vat"
+            app:layout_constraintStart_toStartOf="@+id/price_subtotal"
+            app:layout_constraintTop_toBottomOf="@+id/price_subtotal" />
+
+        <TextView
+            android:id="@+id/grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/price_subtotal"
+            android:layout_alignStart="@+id/price_subtotal"
+            android:layout_below="@+id/view"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Grand Total"
+            android:textColor="@color/green"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/grandtotal_amt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vat_total"
+            app:layout_constraintTop_toBottomOf="@+id/vat_total" />
+
+        <TextView
+            android:id="@+id/grandtotal_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="220"
+            android:textColor="@color/green"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vat" />
+
+        <Button
+            android:id="@+id/placeorder_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/grandtotal_amt"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grandtotal_amt" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:indeterminateTint="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid android:color="@color/green" />
+
+            <size
+                android:width="25dp"
+                android:height="25dp" />
+
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_chevron_right_black_24dp"  />
+</layer-list>

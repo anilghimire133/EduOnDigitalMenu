@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_myorder"
+            android:icon="@mipmap/list"
+            android:title="My Order" />
+        <item
+            android:id="@+id/nav_addtocart"
+            android:icon="@mipmap/addtocart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_callwaiter"
+            android:icon="@mipmap/callwaiter"
+            android:title="Call waiter" />
+        <!--<item-->
+            <!--android:id="@+id/nav_language"-->
+            <!--android:icon="@mipmap/language"-->
+            <!--android:title="Select Langauge" />-->
+
+    </group>
+
+    <group android:id="@+id/icon_group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutus"
+            android:icon="@mipmap/info"
+            android:title="About Us" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@mipmap/feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/help"
+            android:icon="@mipmap/help"
+            android:title="Help" />
+    </group>
+
+</menu>
